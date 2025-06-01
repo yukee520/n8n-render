@@ -1,13 +1,26 @@
 {
   "name": "n8n-render",
   "version": "1.0.0",
+  "description": "n8n deployment for Render.com",
+  "main": "start.js",
   "scripts": {
-    "start": "n8n start"
+    "start": "node --require dotenv/config start.js",
+    "build": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "n8n": "1.38.1"
+    "n8n": "^1.38.1",
+    "dotenv": "^16.0.3"
   },
   "engines": {
-    "node": ">=20.x"
+    "node": "20.x",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "render": {
+    "start": "npm start",
+    "install": "npm install"
   }
 }
